@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Gatsby Typescript & Tailwind Starter`,
+    description: `Kick off your next, great Gatsby project with this starter. This barebones starter ships with the main Gatsby configuration files you might need. Based on the default Gatsby starter.`,
+    author: `@mattijle`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -14,11 +14,14 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-postcss`,
+    `gatsby-plugin-typescript`,
+    `gatsby-plugin-typescript-checker`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
+        name: `gatsby-typescript-starter`,
         short_name: `starter`,
         start_url: `/`,
         background_color: `#663399`,
